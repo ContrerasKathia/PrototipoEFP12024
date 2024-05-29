@@ -27,6 +27,7 @@ class PacienteCrud
     void Modificar();
     void Borrar();
     void Desplegar();
+    void Reportes();
     void Crud();
 };
 #endif // PACIENTE_H

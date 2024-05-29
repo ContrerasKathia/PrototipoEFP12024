@@ -102,7 +102,7 @@ int choice;
 void PacienteCrud::Ingresar() {
    system("cls");
     cout<<"\n------------------------------------------------------------------------------------------------------------------------"<<endl;
-    cout<<"\n-------------------------------------------------Agregar Pais--------------------------------------------"<<endl;
+    cout<<"\n-------------------------------------------------Agregar Paciente--------------------------------------------"<<endl;
     Paciente paciente1;
     cout << "Ingrese el id del Paciente: ";
     cin >> paciente1.id;
@@ -150,7 +150,7 @@ void PacienteCrud::Modificar() {
     while (archivo.read(reinterpret_cast<char*>(&paciente1), sizeof(Paciente))) {
         if (paciente1.id == codigo) {
             cout << "Ingrese el nuevo nombre del Paciente: ";
-
+            cin.ignore();
             cin.getline(paciente1.nombre,50);
             cout << "Ingrese el nuevo apellido del Paciente: ";
 
@@ -164,14 +164,13 @@ void PacienteCrud::Modificar() {
             cin.getline(paciente1.direccion, 50);
 
             cout << "Ingrese el nuevo genero del Paciente (1 hombre, 2 mujer): ";
-            cin.ignore();
             cin >> paciente1.genero;
 
             cout << "Ingrese el nuevo telefono del Paciente : ";
-            cin.ignore();
+
             cin >> paciente1.telefono;
             cout << "Ingrese el nuevo estado del Paciente (1 activo, 0 inactivo): ";
-            cin.ignore();
+
             cin >> paciente1.estado;
 
             archivo.seekp(-static_cast<int>(sizeof(Paciente)), ios::cur);
@@ -197,7 +196,7 @@ void PacienteCrud::Modificar() {
 void PacienteCrud::Borrar() {
     int codigo;
     cout<<"\n------------------------------------------------------------------------------------------------------------------------"<<endl;
-    cout<<"\n-------------------------------------------------Eliminar Pais--------------------------------------------"<<endl;
+    cout<<"\n-------------------------------------------------Eliminar Paciente--------------------------------------------"<<endl;
     cout << "Ingrese el Id del Paciente a eliminar: ";
     cin >> codigo;
 
@@ -235,7 +234,7 @@ void PacienteCrud::Borrar() {
 // Nos muestra las carreras registradas
 void PacienteCrud::Desplegar() {
     system("cls");
-    cout<<"-----------------Despliegue de Paises registradas---------------------"<<endl;
+    cout<<"-----------------Despliegue de Pacientes registradas---------------------"<<endl;
     ifstream archivo("Pacientes.dat", ios::binary);
     if (!archivo) {
         cout << "No hay Pacientes registrados." << endl;
@@ -260,4 +259,65 @@ void PacienteCrud::Desplegar() {
     cout << "Presione Enter para continuar...";
     cin.ignore();
     cin.get();
+}
+void PacienteCrud::Reportes(){
+    cout<<"\n------------------------------------------------------------------------------------------------------------------------"<<endl;
+    cout<<"\n-------------------------------------------------INFORMES PACIENTES --------------------------------------------"<<endl;
+    int codigo;
+    cout << "Ingrese el id del Paciente que desea imprimir: ";
+    cin >> codigo;
+
+    fstream archivo("Pacientes.dat", ios::binary | ios::in | ios::out);
+    if (!archivo) {
+        cout << "No hay Pacientes registrados." << endl;
+        return;
+    }
+
+    Paciente paciente1;
+    bool encontrada = false;
+    while (archivo.read(reinterpret_cast<char*>(&paciente1), sizeof(Paciente))) {
+        if (paciente1.id == codigo) {
+            cout << "ID: " << paciente1.id << endl;
+            cout << "Nombre: " << paciente1.nombre << endl;
+            cout << "Apellido: " << paciente1.apellido << endl;
+            cout << "Fecha de nacimiento: " << paciente1.fechanac << endl;
+            cout << "Genero: " << paciente1.genero << endl;
+            cout << "Direccion: " << paciente1.direccion << endl;
+            cout << "Telefono: " << paciente1.telefono << endl;
+            cout << "Estado: " << paciente1.estado << endl;
+            cout << "-----------------------------" << endl;
+            FILE *arch = fopen("Reporte_Paciente.txt", "wt");
+			// Se verifica si se abrió correctamente el archivo de texto
+            if (arch == NULL) {
+                cerr << "Error al imprimir informe." << endl;
+                // Si hay un error, se termina la ejecución del programa
+                exit(1);
+            }
+			// Se escriben los datos del acta en el archivo de texto
+            fprintf(arch, "Id: %d\n", paciente1.id);
+            fprintf(arch, "Nombre:   %s\n",paciente1.nombre);
+            fprintf(arch, "Apellido:   %s\n",paciente1.apellido);
+            fprintf(arch, "Fecha de nacimiento:   %s\n",paciente1.fechanac);
+            fprintf(arch, "Genero:   %s\n",paciente1.genero);
+            fprintf(arch, "Direccion:   %s\n",paciente1.direccion);
+            fprintf(arch, "Telefono:   %s\n",paciente1.telefono);
+            fprintf(arch, "estado:   %s\n",paciente1.estado);
+            // Se cierra el archivo de texto.
+            fclose(arch);
+            // Se informa al usuario que se creó el archivo de texto con los datos del acta
+            cout << "Se imprimio correctamente (Reporte_Paciente)" << endl;
+            getch();
+            encontrada = true;
+            break;
+        }
+    }
+
+    if (!encontrada) {
+        cout << "No se encontró Paciente con el codigo ingresado." << endl;
+    }
+    archivo.close();
+    cout << "Presione Enter para continuar...";
+    cin.ignore();
+    cin.get();
+
 }

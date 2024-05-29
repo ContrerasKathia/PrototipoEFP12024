@@ -39,20 +39,20 @@
 	<conio.h>
 	<iomanip>
 
-1716998871 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\main.cpp
+1717000738 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\main.cpp
 	<iostream>
 	"AUTENTICACION.h"
 	"Usuarios.h"
 	"Bitacora.h"
 	"Paciente.h"
 
-1716997886 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\paciente.h
+1717000701 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\paciente.h
 	<stdlib.h>
 	<cstdlib>
 	<conio.h>
 	<iomanip>
 
-1716999513 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\paciente.cpp
+1717000857 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\paciente.cpp
 	"Paciente.h"
 	"usuarios.h"
 	"AUTENTICACION.h"

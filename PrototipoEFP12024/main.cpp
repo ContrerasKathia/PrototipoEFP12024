@@ -77,12 +77,11 @@ void menuGeneral()
             catalogos();
             break;
         case 2:
-
-            //procesos();
+            PacienteCrud paciente1;
+            paciente1.Reportes();
             break;
         case 3:
             Auditoria.visualizarBitacora();
-            //reportes();
             break;
         case 4:
                 Auditoria.ingresoBitacora(user,codigoPrograma,"LGO"); //llamada para registrar la bitacora de seguridad
