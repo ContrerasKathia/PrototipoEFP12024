@@ -1,0 +1,35 @@
+commit ab554a668cf747b1bf732760cd13165edd64f2bf
+Author: Kathia Contreras <kcontrerasr3@miumg.edu.gt>
+Date:   Wed May 29 10:46:00 2024 -0600
+
+    Subiendo Reportes
+
+commit 78de5007ccbfd8f095703633d99db5a6e5f727e4
+Author: Kathia Contreras <kcontrerasr3@miumg.edu.gt>
+Date:   Wed May 29 10:21:55 2024 -0600
+
+    SUBIENDO CATALOGO PACIENTE
+
+commit 1895be998743f7e6273d78ae42e78b8056873ba7
+Author: Kathia Contreras <kcontrerasr3@miumg.edu.gt>
+Date:   Wed May 29 09:43:08 2024 -0600
+
+    Modificaciones clase
+
+commit 4a4b32f9fab49967f3a9c87aa0fada4663f0c853
+Author: Kathia Contreras <kcontrerasr3@miumg.edu.gt>
+Date:   Wed May 29 09:42:29 2024 -0600
+
+    subiendo clase paciente inicial
+
+commit 79b3fd0112c5d2f19450cfce8eba19a821b21e27
+Author: Kathia Contreras <kcontrerasr3@miumg.edu.gt>
+Date:   Wed May 29 09:37:41 2024 -0600
+
+    SUBIENDO MENU GENERAL
+
+commit 8475e9769de7ed8a4f562e940cd415f874594579
+Author: Kathia Contreras <kcontrerasr3@miumg.edu.gt>
+Date:   Wed May 29 09:35:28 2024 -0600
+
+    SUBIENDO PARTE INICIAL
