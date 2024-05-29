@@ -11,7 +11,7 @@
 1716996314 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\bitacora.h
 	<iostream>
 
-1716996262 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\autenticacion.cpp
+1716997138 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\autenticacion.cpp
 	"AUTENTICACION.h"
 	<iostream>
 	<fstream>
@@ -30,7 +30,7 @@
 1716996582 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\usuarios.h
 	<iostream>
 
-1716996474 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\usuarios.cpp
+1716997138 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\usuarios.cpp
 	"Usuarios.h"
 	<fstream>
 	<iostream>
@@ -39,9 +39,38 @@
 	<conio.h>
 	<iomanip>
 
-1716996782 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\main.cpp
+1716998871 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\main.cpp
 	<iostream>
 	"AUTENTICACION.h"
 	"Usuarios.h"
 	"Bitacora.h"
+	"Paciente.h"
+
+1716997886 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\paciente.h
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1716999513 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\paciente.cpp
+	"Paciente.h"
+	"usuarios.h"
+	"AUTENTICACION.h"
+	"Bitacora.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<cstring>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<random>
+	<cstdlib>
+	<ctime>
+	<iomanip>
 

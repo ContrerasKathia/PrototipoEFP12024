@@ -2,6 +2,7 @@
 #include "AUTENTICACION.h"
 #include "Usuarios.h"
 #include "Bitacora.h"
+#include"Paciente.h"
 
 void menuGeneral();
 void catalogos();
@@ -10,7 +11,7 @@ void reportes();
 string user, contrasena;
 
 using namespace std;
-
+//HECHO POR KATHIA CONTRERAS 9959-23-8246
 int main()
 {
     AUTENTICACION ingreso(user, contrasena);
@@ -124,7 +125,8 @@ void catalogos()
             break;
         case 2:
         {
-
+            PacienteCrud paciente1;
+            paciente1.Crud();
         }
             break;
         case 3:
