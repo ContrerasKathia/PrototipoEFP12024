@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1716996327 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\bitacora.cpp
+	"Bitacora.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<ctime>
+	<stdlib.h>
+	<iomanip>
+
+1716996314 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\bitacora.h
+	<iostream>
+
+1716996262 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\autenticacion.cpp
+	"AUTENTICACION.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	"Usuarios.h"
+	"Bitacora.h"
+
+1716996262 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\autenticacion.h
+	<iostream>
+	<fstream>
+	<string>
+
+1716996582 c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\include\usuarios.h
+	<iostream>
+
+1716996474 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\src\usuarios.cpp
+	"Usuarios.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1716996782 source:c:\users\cluba\onedrive\documents\kat ing\semetre3\progra\progra1\final progra\examen final\prototipoefp12024\prototipoefp12024\main.cpp
+	<iostream>
+	"AUTENTICACION.h"
+	"Usuarios.h"
+	"Bitacora.h"
+
