@@ -286,7 +286,7 @@ void PacienteCrud::Reportes(){
             cout << "Telefono: " << paciente1.telefono << endl;
             cout << "Estado: " << paciente1.estado << endl;
             cout << "-----------------------------" << endl;
-            FILE *arch = fopen("Reporte_Paciente.txt", "wt");
+            FILE *arch = fopen("Reporte1_Paciente.txt", "wt");
 			// Se verifica si se abrió correctamente el archivo de texto
             if (arch == NULL) {
                 cerr << "Error al imprimir informe." << endl;

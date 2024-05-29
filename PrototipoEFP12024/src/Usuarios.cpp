@@ -6,6 +6,7 @@
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
+#include "Bitacora.h"
 #define USER "usuario"
 #define PASS "1234"
 
@@ -13,8 +14,36 @@ using namespace std;
 
 
 void Usuarios::menuUsuarios(){
+    string user;
+    string codigoPrograma="6001";
+    Bitacora Auditoria;
+    //-----------------------------TRAE USUARIO----------------------------
+    fstream file;
+    int total=0;
+    file.open("bitaA.txt",ios::in);
+    if(!file)
+	{
+		cout<<"\n\t\t\tNo hay usuarios registrados...";
+		file.close();
+	}
+	else
+	{
+		file >> user;
+		while(!file.eof())
+		{
+			total++;
+			file >> user;
+		}
+		if(total==0)
+		{
+			cout<<"\n\t\t\tNo hay usuarios...";
+		}
+	}
+	file.close();
+    //----------------------------------fin arregla bitacora------------------------------------------------
 
 int choice;
+
     do {
     char x;
 	system("cls");
@@ -38,17 +67,21 @@ int choice;
     	do
     	{
     		insertar();
+    		Auditoria.ingresoBitacora(user,codigoPrograma,"IUS"); //IUS INGRESA USUARIO
     		cout<<"\n\t\t\t Agrega otra persona(s,n): ";
     		cin>>x;
 		}while(x=='s'||x=='S');
 		break;
 	case 2:
 		desplegar();
+		Auditoria.ingresoBitacora(user,codigoPrograma,"DUS"); //DUS DESPLIEGA USUARIO
 		break;
 	case 3:
+	    Auditoria.ingresoBitacora(user,codigoPrograma,"MUS"); //DUS DESPLIEGA USUARIO
 		modificar();
 		break;
 	case 4:
+	    Auditoria.ingresoBitacora(user,codigoPrograma,"BUS"); //DUS DESPLIEGA USUARIO
 		borrar();
 		break;
 	case 5:
