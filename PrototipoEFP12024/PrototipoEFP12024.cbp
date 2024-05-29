@@ -36,10 +36,12 @@
 		</Compiler>
 		<Unit filename="include/AUTENTICACION.h" />
 		<Unit filename="include/Bitacora.h" />
+		<Unit filename="include/Paciente.h" />
 		<Unit filename="include/Usuarios.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AUTENTICACION.cpp" />
 		<Unit filename="src/Bitacora.cpp" />
+		<Unit filename="src/Paciente.cpp" />
 		<Unit filename="src/Usuarios.cpp" />
 		<Extensions />
 	</Project>
